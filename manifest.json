@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "论坛错误页面自动恢复",
+  "version": "1.0",
+  "description": "当论坛页面因网络错误加载失败时自动刷新，配合油猴签到脚本使用",
+  "permissions": [
+    "tabs",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
